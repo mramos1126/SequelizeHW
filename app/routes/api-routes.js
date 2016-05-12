@@ -1,4 +1,4 @@
-var character	= require ("../model/burger.js");
+var Character	= require ("../model/burger.js");
 module.exports = function(app){
 
 
@@ -10,7 +10,7 @@ module.exports = function(app){
 		var character = req.body;
 		console.log(character);
 		// Then send it to the ORM to "save" into the DB.
-		character.create({
+		Character.create({
 			burger_name : character.name
 
 		});
