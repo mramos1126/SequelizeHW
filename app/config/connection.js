@@ -9,10 +9,11 @@ var source = {
     password: 'whl897ncu19jntzx',
     database: "e9yjumwmqsjecccn"
 }
+ 
 
 }
+//var selectedSource = source.jawsDB;
 var selectedSource = source.jawsDB;
-
 // Creates mySQL connection using Sequelize
 var sequelize = new Sequelize(selectedSource.database, selectedSource.user, selectedSource.password, {
   host: selectedSource.host,
