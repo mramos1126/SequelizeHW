@@ -1,5 +1,5 @@
-create xb4wyoqwm1u3q942;
-use xb4wyoqwm1u3q942;
+create Burgers;
+use Burgers;
 
 CREATE TABLE `Burgers` (
   `id` INT NOT NULL AUTO_INCREMENT,

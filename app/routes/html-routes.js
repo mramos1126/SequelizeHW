@@ -5,15 +5,20 @@
 // Dependencies
 // =============================================================
 var path 		= require('path');
-
+var express = require('express');
 
 // Routes
 // =============================================================
 module.exports = function(app){
 
-	// Each of the below routes just handles the HTML page that the user gets sent to.
+	
+	app.use(express.static(__dirname + '/../public'));
+
+
 	app.get('/', function(req, res){
 		res.sendFile(path.join(__dirname + '/../public/burger.html'));
+	
+
 	});
 
 	
