@@ -56,10 +56,11 @@
 	<script type="text/javascript"> 
 		$(document).ready(function() {
 			$('#burger').on('click', function(){
-				var	newBurger ={burgerName :  $("#word").val().trim()};
+
+				var	newBurger = {burgerName :  $("#word").val().trim()};
 			
 
-				$('#list').append('<br>' + newBurger +'<br>');
+				$('#list').append('<br>' + newBurger.burgerName +'<br>');
 				console.log(newBurger);
 				
 
