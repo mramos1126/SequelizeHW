@@ -11,7 +11,7 @@ module.exports = function(app){
 		console.log(character);
 		// Then send it to the ORM to "save" into the DB.
 		Character.create({
-			burger_name : character.name
+			burgerName : character.burgerName
 
 		});
 

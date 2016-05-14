@@ -5,7 +5,7 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js"); 
 
 
-var Character = sequelize.define("Burgerworld", {
+var Character = sequelize.define("burgerDome", {
 	
 	// id: {
 		
@@ -14,7 +14,7 @@ var Character = sequelize.define("Burgerworld", {
 	// 	primaryKey: true
 	// },
 	
-	burger_name: {
+	burgerName: {
 		type: Sequelize.STRING
 	}
 	//{    timestamps: false },

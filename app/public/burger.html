@@ -56,7 +56,7 @@
 	<script type="text/javascript"> 
 		$(document).ready(function() {
 			$('#burger').on('click', function(){
-				var	newBurger =  $("#word").val();
+				var	newBurger ={burgerName :  $("#word").val().trim()};
 			
 
 				$('#list').append('<br>' + newBurger +'<br>');
@@ -64,7 +64,7 @@
 				
 
 			var currentURL = window.location.origin;
-$.post( currentURL + "/api/burger", {newBurger:newBurger})
+$.post( currentURL + "/api/burger", newBurger)
 				.done(function(data){
 					console.log(data);
 				})	
